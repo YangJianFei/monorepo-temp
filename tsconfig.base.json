@@ -1,0 +1,53 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "strict": true,
+        "jsx": "preserve",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "baseUrl": ".",
+        "skipLibCheck": true,
+        "noEmit": true,
+        "paths": { // 路径映射，相对于baseUrl
+            "@fly/*": [
+                "packages/*"
+            ]
+        }
+    },
+    "include": [
+        "packages/**/src/**/*.ts",
+        "packages/**/src/**/*.d.ts",
+        "packages/**/src/**/*.tsx",
+        "packages/**/src/**/*.vue",
+        "packages/base/components/**/*.ts",
+        "packages/base/components/**/*.d.ts",
+        "packages/base/components/**/*.tsx",
+        "packages/base/components/**/*.vue",
+        "packages/base/index.ts",
+        "common/**/*.ts",
+        "common/**/*.d.ts",
+        "common/**/*.tsx",
+        "common/**/*.vue",
+    ],
+    "exclude": [
+        "node_modules",
+        "**/dist",
+        "**/__tests__/**/*",
+        "**/gulpfile.ts",
+        "**/test-helper",
+        "**/*.md"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
+}
