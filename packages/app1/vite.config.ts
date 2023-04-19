@@ -8,10 +8,20 @@
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import federation from '@originjs/vite-plugin-federation'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    federation({
+      name: 'local-app1',
+      remotes: {
+        'remote-app2': 'http://127.0.0.1:5500/packages/app2/dist/assets/remoteEntry.js'
+      },
+      shared: ['vue']
+    })
+  ],
   base: './', // 打包路径
   server: {
     port: 5173

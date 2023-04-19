@@ -13,7 +13,11 @@ const routes: RouteRecordRaw[] = [
         path: '/app2-index',
         name: 'app2Index',
         component: () => import('@fly/app2/src/view/index.vue')
-    }
+    }, {
+        path: '/app2-index2',
+        name: 'app2Index2',
+        component: () => import('remote-app2/Index2')
+    },
 ];
 
 const router = createRouter({

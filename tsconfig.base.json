@@ -23,15 +23,6 @@
         }
     },
     "include": [
-        "packages/**/src/**/*.ts",
-        "packages/**/src/**/*.d.ts",
-        "packages/**/src/**/*.tsx",
-        "packages/**/src/**/*.vue",
-        "packages/base/components/**/*.ts",
-        "packages/base/components/**/*.d.ts",
-        "packages/base/components/**/*.tsx",
-        "packages/base/components/**/*.vue",
-        "packages/base/index.ts",
         "common/**/*.ts",
         "common/**/*.d.ts",
         "common/**/*.tsx",
