@@ -2,7 +2,7 @@
  * @Description:   
  * @Author: YangJianFei
  * @Date: 2023-04-18 09:01:19
- * @LastEditTime: 2023-04-18 16:09:04
+ * @LastEditTime: 2023-04-19 16:11:09
  * @LastEditors: YangJianFei
  * @FilePath: \monorepo-demo\packages\app2\src\App.vue
 -->
@@ -13,15 +13,12 @@ import { Snow } from '@fly/common';
 
 <template>
   <div>
+    我是：app2 app开始
     <Snow />
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
   </div>
+  <router-view></router-view>
   <HelloWorld msg="Vite + Vue" />
+  <div> 我是：app2 app结束</div>
 </template>
 
 <style scoped>

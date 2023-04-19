@@ -12,7 +12,15 @@ const routes: RouteRecordRaw[] = [
     }, {
         path: '/app2-index',
         name: 'app2Index',
-        component: () => import('@fly/app2/src/view/index.vue')
+        // component: () => import('@fly/app2/src/view/index.vue')
+        component: () => import('@fly/app2/src/App.vue'),
+        children: [
+            {
+                path: 'people',
+                name: 'people',
+                component: () => import('./view/people.vue')
+            }
+        ]
     }, {
         path: '/app2-index2',
         name: 'app2Index2',
