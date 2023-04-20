@@ -14,13 +14,13 @@ import federation from '@originjs/vite-plugin-federation'
 export default defineConfig({
   plugins: [
     vue(),
-    federation({
-      name: 'local-app1',
-      remotes: {
-        'remote-app2': 'http://127.0.0.1:5500/packages/app2/dist/assets/remoteEntry.js'
-      },
-      shared: ['vue']
-    })
+    // federation({
+    //   name: 'local-app1',
+    //   remotes: {
+    //     'remote-app2': 'http://127.0.0.1:5500/packages/app2/dist/assets/remoteEntry.js'
+    //   },
+    //   shared: ['vue']
+    // })
   ],
   base: './', // 打包路径
   server: {

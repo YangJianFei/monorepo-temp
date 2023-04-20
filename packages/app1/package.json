@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fly/app2": "workspace:^"
+    "@fly/app2": "workspace:^",
+    "qiankun": "^2.10.5"
   }
 }
